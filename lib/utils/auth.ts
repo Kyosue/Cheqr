@@ -4,7 +4,7 @@ import { connectDB } from '../db';
 import { authenticateUser as apiAuthenticateUser } from '../api';
 
 const API_CONFIG = {
-  baseURL: 'https://cheqr.onrender.com/api',
+  baseURL: 'http://192.168.0.247:3000/api',
   headers: {
     'Content-Type': 'application/json',
   },

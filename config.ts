@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-  baseURL: 'http://192.168.0.247:3000/api',
+  baseURL: 'https://cheqr.onrender.com/api',
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json',

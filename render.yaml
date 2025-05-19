@@ -1,0 +1,18 @@
+services:
+  # MongoDB Database
+  - type: mongodb
+    name: cheqr-db
+    database: cheqr
+    plan: free
+
+  # Backend API Service
+  - type: web
+    name: cheqr-backend
+    env: node
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: PORT
+        value: 3000
