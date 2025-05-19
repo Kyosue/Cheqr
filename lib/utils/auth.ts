@@ -1,10 +1,8 @@
 import crypto from 'crypto';
-import { User } from '../models/User';
-import { connectDB } from '../db';
 import { authenticateUser as apiAuthenticateUser } from '../api';
 
 const API_CONFIG = {
-  baseURL: 'http://192.168.0.247:3000/api',
+  baseURL: 'https://cheqr.onrender.com/api',
   headers: {
     'Content-Type': 'application/json',
   },
