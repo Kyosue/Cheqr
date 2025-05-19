@@ -1,4 +1,6 @@
 import crypto from 'crypto';
+import { User } from '../models/User';
+import { connectDB } from '../db';
 import { authenticateUser as apiAuthenticateUser } from '../api';
 
 const API_CONFIG = {
